@@ -1,0 +1,11 @@
+python -m venv venv
+venv\Scripts\activate
+pip install django
+django-admin startproject core .
+python manage.py startapp blog
+python manage.py startapp bookstore
+python manage.py runserver
+
+python manage.py createsuperuser
+admin
+123456
