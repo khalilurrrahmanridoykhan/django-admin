@@ -1,9 +1,9 @@
 from django.db import models
-
+import django.apps
 
 
 class Category(models.Model):
-    name = models.CharField(max_length=100)
+    name = models.CharField(max_length=100, help_text='Maximum 100 characters')
 
     def __str__(self):
         return self.name

@@ -9,5 +9,8 @@ class BookstoreAdminArea(admin.AdminSite):
 
 bookstore_site = BookstoreAdminArea(name='bookstoreadmin')
 
-admin.site.register(models.Book)
+class BookAdmin(admin.ModelAdmin):
+    fields = ['title', 'author', ('price', 'stock')]
+
+admin.site.register(models.Book,BookAdmin)
 bookstore_site.register(models.Book)
