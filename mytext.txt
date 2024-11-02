@@ -9,3 +9,8 @@ python manage.py runserver
 python manage.py createsuperuser
 admin
 123456
+
+
+
+python manage.py makemigrations
+python manage.py migrate

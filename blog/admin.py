@@ -9,4 +9,5 @@ class BlogAdminArea(admin.AdminSite):
 blog_site = BlogAdminArea(name='blogadmin')
 
 admin.site.register(models.post)
+admin.site.register(models.Category)
 blog_site.register(models.post)

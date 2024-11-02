@@ -41,7 +41,8 @@ INSTALLED_APPS = [
 
 EXTRANAL_APPS = [
     'blog',
-    'bookstore'
+    'bookstore',
+    'frondend',
 ]
 
 INSTALLED_APPS += EXTRANAL_APPS
